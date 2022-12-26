@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@500&display=swap');
+
+@import './fragments/content';
+@import './fragments/icon';
+@import './fragments/rate';
+@import './fragments/thanks';
+
+$orange: hsl(25, 97%, 53%);
+$white: hsl(0, 0%, 100%);
+$light-grey: hsl(217, 12%, 63%);
+$medium-grey: hsl(216, 12%, 54%);
+$dark-blue: hsl(213, 19%, 18%);
+$very-dark-blue: hsl(216, 12%, 8%);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Overpass', sans-serif;
+  height: 100%;
+}
+
+body {
+  background-color: $very-dark-blue;
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+main {
+  background-color: hsl(212, 19%, 13%);
+  width: 400px;
+  height: 400px;
+  border-radius: 25px;
+}
+
+.submit {
+  font-family: 'Overpass', sans-serif;
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 330px;
+  height: 40px;
+  border: 0;
+  background-color: $orange;
+  color: $white;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 3px;
+  border-radius: 25px;
+}
+
+.submit:hover {
+  color: $orange;
+  background-color: $white;
+}

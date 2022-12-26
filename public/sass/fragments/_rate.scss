@@ -1,0 +1,38 @@
+$orange: hsl(25, 97%, 53%);
+$white: hsl(0, 0%, 100%);
+$light-grey: hsl(217, 12%, 63%);
+$medium-grey: hsl(216, 12%, 54%);
+$dark-blue: hsl(213, 19%, 18%);
+$very-dark-blue: hsl(216, 12%, 8%);
+
+.rate_list {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.rate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: $dark-blue;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: $light-grey;
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.rate:hover {
+  background-color: $light-grey;
+  color: $white;
+}
+
+.active {
+  color: $white!important;
+  background-color: $orange!important;
+}
